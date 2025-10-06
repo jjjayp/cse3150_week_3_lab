@@ -28,18 +28,14 @@ void printReading(const std::string& label, const double& value) {
 }
 
 double average(const double values[], int size) {
-    // TODO: throw "Empty" if size==0, else compute average
-    if (size == 0)
-    {
+    if (size == 0) {
         throw std::string("Empty");
     }
     double s = 0.0;
-    for (int i = 0; i < size; ++i)
-    {
+    for (int i = 0; i < size; ++i) {
         s += values[i];
     }
-    final = s / size
-    return final;
+    return s / size;
 }
 
 double minValue(const double values[], int size) {
